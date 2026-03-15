@@ -23,11 +23,19 @@ function Projects() {
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:100}}
                     transition={{duration:2}}>
-                    <h3 className='mb-2 font-semibold text-2xl'>{project.title}</h3>
+                    <h3 className='mb-1 font-semibold text-2xl'>{project.title}</h3>
+                    {project.subtitle && <p className='mb-2 text-sm text-stone-500 italic'>{project.subtitle}</p>}
                     <p className='mb-4 text-stone-400'>{project.description}</p>
+                    <div className='flex flex-wrap gap-2 mb-4'>
                     {project.technologies.map((tech,index)=>(
-                        <span className='mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300' key={index}>{tech}</span>
+                        <span className='rounded bg-stone-900 p-2 text-sm font-medium text-stone-300' key={index}>{tech}</span>
                     ))}
+                    </div>
+                    {project.link && (
+                        <a href={project.link} target='_blank' rel='noopener noreferrer' className='text-sm text-stone-400 underline hover:text-stone-200 transition-colors'>
+                            View on GitHub →
+                        </a>
+                    )}
                     </motion.div>
                 </div>
             ))}

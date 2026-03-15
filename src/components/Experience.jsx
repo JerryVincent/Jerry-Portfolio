@@ -14,14 +14,13 @@ const Experience = () => {
         <div>
             {EXPERIENCES.map((experience,index)=>(
                 <div key={index} className='mb-8 flex flex-wrap lg:justify-center '>
-                    <motion.div 
+                    <motion.div
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:-100}}
                     transition={{duration:1.5}}
                     className='w-full lg:w-1/4'>
-                        <p className='mb-2 text-sm text-stone-400'>
-                            {experience.year}
-                        </p>
+                        <p className='mb-1 text-sm text-stone-400'>{experience.year}</p>
+                        {experience.location && <p className='text-sm text-stone-500'>{experience.location}</p>}
                     </motion.div>
                     <motion.div 
                     whileInView={{opacity:1,x:0}}
