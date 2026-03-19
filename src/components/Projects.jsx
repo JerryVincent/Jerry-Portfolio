@@ -17,7 +17,7 @@ function Projects() {
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:-100}}
                     transition={{duration:1}}>
-                    <img src={project.image} alt={project.title} width={250} height={250} className='mb-6 rounded'/>
+                    <img src={project.image} alt={project.title} width={350} height={350} className='mb-6 rounded'/>
                     </motion.div>
                     <motion.div className='w-full max-w-xl lg:w-3/4'
                     whileInView={{opacity:1,x:0}}
