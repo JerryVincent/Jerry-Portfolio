@@ -12,14 +12,14 @@ function Projects() {
         className='my-20 text-center text-4xl'>Projects</motion.h2>
         <div>
             {PROJECTS.map((project,index)=>(
-                <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-                    <motion.div className='w-full lg:w-1/4'
+                <div key={index} className='mb-8 flex flex-wrap lg:justify-center lg:gap-8'>
+                    <motion.div className='w-full lg:w-1/4 flex justify-center lg:justify-start overflow-hidden'
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:-100}}
                     transition={{duration:1}}>
-                    <img src={project.image} alt={project.title} width={350} height={350} className='mb-6 rounded'/>
+                    <img src={project.image} alt={project.title} className='mb-6 rounded w-4/5 sm:w-3/5 md:w-2/5 lg:w-full h-auto object-cover'/>
                     </motion.div>
-                    <motion.div className='w-full max-w-xl lg:w-3/4'
+                    <motion.div className='w-full max-w-xl lg:w-1/2'
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:100}}
                     transition={{duration:2}}>

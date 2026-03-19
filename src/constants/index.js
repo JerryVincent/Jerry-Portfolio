@@ -74,5 +74,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Münster, Germany",
   phoneNo: "+49 15736966402",
-  email: "jerrynambalampara111@gmail.com",
+  email: "jerry.vincent@uni-muenster.de",
 };
