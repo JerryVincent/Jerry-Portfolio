@@ -31,11 +31,18 @@ function Projects() {
                         <span className='rounded bg-stone-900 p-2 text-sm font-medium text-stone-300' key={index}>{tech}</span>
                     ))}
                     </div>
+                    <div className='flex gap-4'>
                     {project.link && (
                         <a href={project.link} target='_blank' rel='noopener noreferrer' className='text-sm text-stone-400 underline hover:text-stone-200 transition-colors'>
                             View on GitHub →
                         </a>
                     )}
+                    {project.liveLink && (
+                        <a href={project.liveLink} target='_blank' rel='noopener noreferrer' className='text-sm text-stone-400 underline hover:text-stone-200 transition-colors'>
+                            Live App →
+                        </a>
+                    )}
+                    </div>
                     </motion.div>
                 </div>
             ))}

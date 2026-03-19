@@ -42,6 +42,7 @@ export const PROJECTS = [
       "A weather-driven outdoor activity planner (React, Vite, React Router v7, Leaflet.js) that detects the user's geolocation, fetches live weather data via REST API, and recommends suitable outdoor activities based on real-time conditions. Integrated Google Maps routing for turn-by-turn directions and location-specific safety tips.",
     technologies: ["React", "Vite", "React Router v7", "Leaflet.js", "MUI", "React Bootstrap", "axios"],
     link: "https://github.com/JerryVincent/Breezeplan_Frontend",
+    liveLink: "https://breezeplan.netlify.app/",
   },
 ];
 
